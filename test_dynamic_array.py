@@ -184,14 +184,14 @@ class TestDynamicArray(unittest.TestCase):
     # Emptiness, len and clearing
     # """
 
-    # def test_is_empty(self):
-    #     """
-    #     A dynamic array containing data is not empty.
-    #     """
-    #     a = DynamicArray()
-    #     self.assertTrue(a.is_empty())
-    #     a.append('FAKE')
-    #     self.assertFalse(a.is_empty())
+    def test_is_empty(self):
+        """
+        A dynamic array containing data is not empty.
+        """
+        a = DynamicArray()
+        self.assertTrue(a.is_empty())
+        a.append('FAKE')
+        self.assertFalse(a.is_empty())
 
     # def test_clear(self):
     #     """

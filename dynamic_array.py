@@ -10,7 +10,10 @@ class DynamicArray:
         self.next_index=0
         
     def is_empty(self):
-        return True
+        if self.next_index<=0:
+            return True
+        else: 
+            return False
 
     def __len__(self):
         return self.next_index
