@@ -7,7 +7,7 @@ class DynamicArray:
 
     def __init__(self):
         self.capacity=10
-        self.data=np.array([])
+        self.data=np.array(object)
 
     def is_empty(self):
         return True
