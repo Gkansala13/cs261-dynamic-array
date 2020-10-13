@@ -7,17 +7,16 @@ class DynamicArray:
     def __init__(self):
         self.capacity=10
         self.data=np.empty(self.capacity, object )
-        self.size=0
+        self.next_index=0
         
     def is_empty(self):
         return True
 
     def __len__(self):
-        return 0
+        return self.next_index
     
     def append(self, item):
-        self.data[self.size] = item
-      
+        self.data[self.next_index] = item
         
     def __getitem__(self, index):
         return self.data[index]
