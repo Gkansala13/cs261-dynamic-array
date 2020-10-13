@@ -37,16 +37,16 @@ class TestDynamicArray(unittest.TestCase):
         self.assertTrue(a.is_empty())
 
     def test_initial_length(self):
-        # """
-        # # A dynamic array has an initial length of 0.
-        # """
+        """
+        A dynamic array has an initial length of 0.
+        """
         a = DynamicArray()
         self.assertEqual(0, len(a))
 
 
-    # """
-    # Appending and retrieving one value
-    # """
+    """
+    Appending and retrieving one value
+    """
 
     # Hint: Do the naive thing.
     def test_append_one_value_to_empty(self):
@@ -57,13 +57,22 @@ class TestDynamicArray(unittest.TestCase):
         a.append(42)
         self.assertEqual(42, a[0])
 
-    # """
-    # Appending and retrieving two values
-    # """
+    """
+    Appending and retrieving two values
+    """
 
-    # # Tip: If you haven't gotten this to pass within two minutes, comment it out
-    # # and move on.
-   
+    # Tip: If you haven't gotten this to pass within two minutes, comment it out
+    # and move on.
+    # def test_append_two_values(self):
+    #     """
+    #     Two values can be appended to and retrieved from a dynamic array.
+    #     """
+    #     a = DynamicArray()
+    #     a.append(8)
+    #     a.append(6)
+    #     self.assertEqual(8, a[0])
+    #     self.assertEqual(6, a[1])
+
     # """
     # Guiding internal data storage, with a static array
     # """
@@ -105,15 +114,15 @@ class TestDynamicArray(unittest.TestCase):
         a.append(99)
         self.assertEqual(99, a.data[0])
 
-    # def test_retrieve_first_appended_value(self):
-    #     """
-    #     The first element appended to the DynamicArray is can be retrieved with
-    #     index 0.
-    #     """
-    #     a = DynamicArray()
-    #     a.append(100)
-    #     self.assertEqual(a[0], a.data[0])
-    #     self.assertEqual(100, a[0])
+    def test_retrieve_first_appended_value(self):
+        """
+        The first element appended to the DynamicArray is can be retrieved with
+        index 0.
+        """
+        a = DynamicArray()
+        a.append(100)
+        self.assertEqual(a[0], a.data[0])
+        self.assertEqual(100, a[0])
 
     # """
     # Guiding appending and retrieving two values.
