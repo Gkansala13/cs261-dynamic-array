@@ -37,9 +37,9 @@ class TestDynamicArray(unittest.TestCase):
         self.assertTrue(a.is_empty())
 
     def test_initial_length(self):
-        """
-        A dynamic array has an initial length of 0.
-        """
+        # """
+        # # A dynamic array has an initial length of 0.
+        # """
         a = DynamicArray()
         self.assertEqual(0, len(a))
 
@@ -48,14 +48,14 @@ class TestDynamicArray(unittest.TestCase):
     # Appending and retrieving one value
     # """
 
-    # # Hint: Do the naive thing.
-    # def test_append_one_value_to_empty(self):
-    #     """
-    #     A single value can be appended to and retrieved from a dynamic array.
-    #     """
-    #     a = DynamicArray()
-    #     a.append(42)
-    #     self.assertEqual(42, a[0])
+    # Hint: Do the naive thing.
+    def test_append_one_value_to_empty(self):
+        """
+        A single value can be appended to and retrieved from a dynamic array.
+        """
+        a = DynamicArray()
+        a.append(42)
+        self.assertEqual(42, a[0])
 
     # """
     # Appending and retrieving two values
