@@ -16,7 +16,7 @@ class DynamicArray:
         return 0
     
     def append(self, item):
-        return self. __getitem__(item)
+         self.data[0] = 99
 
     def __getitem__(self, index):
         return 42
