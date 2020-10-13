@@ -7,7 +7,7 @@ class DynamicArray:
 
     def __init__(self):
         self.capacity=10
-        
+        self.data=np.array([])
 
     def is_empty(self):
         return True
@@ -16,7 +16,8 @@ class DynamicArray:
         return 0
     
     def append(self, item):
-        return 0
+        return self. __getitem__(item)
 
     def __getitem__(self, index):
         return 42
+    
