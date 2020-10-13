@@ -2,5 +2,12 @@
 # Your implementation should pass the tests in test_dynamic_array.py.
 # YOUR NAME
 
-class FixMe:
-    pass
+import numpy as np 
+class DynamicArray:
+
+    def __init__(self):
+        self.capacity=10
+        
+
+    def is_empty(self):
+        return True
