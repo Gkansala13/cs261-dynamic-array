@@ -38,5 +38,7 @@ class DynamicArray:
          return self.data[self.next_index]
 
     def delete(self, index):
+        if index >= self.next_index or index < 0:
+            raise IndexError ("Invalid index")
         self.data = np.delete(self.data, index)
         self.next_index-=1
