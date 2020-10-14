@@ -31,3 +31,6 @@ class DynamicArray:
             raise IndexError("Invalid index")
         return self.data[index]
     
+    def pop(self):
+         self.next_index -= 1
+         return self.data[self.next_index]
