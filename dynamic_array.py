@@ -8,7 +8,7 @@ class DynamicArray:
         self.capacity=10
         self.data=np.empty(self.capacity, object )
         self.next_index=0
-        
+           
     def is_empty(self):
         if self.next_index==0:
             return True
@@ -42,3 +42,9 @@ class DynamicArray:
             raise IndexError ("Invalid index")
         self.data = np.delete(self.data, index)
         self.next_index-=1
+
+    def insert(self, index, item):
+        
+
+
+
