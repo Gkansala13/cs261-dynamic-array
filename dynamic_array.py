@@ -33,6 +33,10 @@ class DynamicArray:
     
     def pop(self):
          if(self.is_empty()):
-            raise IndexError
+            raise IndexError("Invalid index")
          self.next_index -= 1
          return self.data[self.next_index]
+
+    def delete(self, index):
+        self.data = np.delete(self.data, index)
+        self.next_index-=1

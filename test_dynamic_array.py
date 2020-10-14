@@ -271,32 +271,32 @@ class TestDynamicArray(unittest.TestCase):
     # Deleting
     # """
 
-    # def test_delete_last(self):
-    #     """
-    #     Deleting the last element removes it from the dynamic array.
-    #     """
-    #     a = DynamicArray()
-    #     a.append('fee')
-    #     a.append('fi')
-    #     a.append('fo')
-    #     a.delete(2)
-    #     self.assertEqual(2, len(a))
-    #     self.assertEqual('fi', a.pop())
+    def test_delete_last(self):
+        """
+        Deleting the last element removes it from the dynamic array.
+        """
+        a = DynamicArray()
+        a.append('fee')
+        a.append('fi')
+        a.append('fo')
+        a.delete(2)
+        self.assertEqual(2, len(a))
+        self.assertEqual('fi', a.pop())
 
-    # def test_delete_invalid_index(self):
-    #     """
-    #     Deleting an out of bounds index raises an IndexError: index out of range
-    #     """
-    #     a = DynamicArray()
-    #     a.append('fee')
-    #     a.append('fi')
-    #     a.append('fo')
-    #     try:
-    #         a.delete(3)
-    #         a.delete(-1)
-    #         self.fail("Did not raise IndexError: index out of range.")
-    #     except IndexError:
-    #         pass
+    def test_delete_invalid_index(self):
+        """
+        Deleting an out of bounds index raises an IndexError: index out of range
+        """
+        a = DynamicArray()
+        a.append('fee')
+        a.append('fi')
+        a.append('fo')
+        try:
+            a.delete(3)
+            a.delete(-1)
+            self.fail("Did not raise IndexError: index out of range.")
+        except IndexError:
+            pass
 
     # def test_delete_first(self):
     #     """
